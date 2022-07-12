@@ -9,6 +9,7 @@ const Greeting = () => {
     : timeNow >= 12 && timeNow < 18
     ? "Good Afternoon"
     : "Good evening";
+
     const dtoast = (greet)=>{
         toast(`${greet}`);
     }
@@ -16,7 +17,7 @@ const Greeting = () => {
     return(
         <>
         
-        {dtoast(greet)};
+        {dtoast(greet)}
         <ToastContainer/>
         </>
     )
