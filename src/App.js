@@ -9,6 +9,8 @@ import {
 import Home from './pages/Home/Home';
 import Explore from './pages/Explore/Explore';
 import User from './pages/User/User';
+import Login from './pages/Login/Login';
+import Signup from './pages/Signup/Signup';
 
 function App(){
 
@@ -22,6 +24,8 @@ function App(){
             <Route path="/" element={<Home/>} />
             <Route path="Explore" element={<Explore/>} />
             <Route path="User" element={<User />} />
+            <Route path="Login" element={<Login/>} />
+            <Route path="Signup" element={<Signup/>} />
         </Routes>
     </>);
 

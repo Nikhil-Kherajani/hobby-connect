@@ -26,6 +26,16 @@ function Navbar(){
                 <li className="nav-item">
                 <Link className="nav-link active" to="/User">User</Link>
                 </li>
+                <li className="nav-item">
+                <Link className="nav-link active" to="/Login">Login</Link>
+                </li>
+                <li className="nav-item">
+                <Link className="nav-link active" to="/Signup">Signup</Link>
+                </li>
+
+                <li>
+                    <button className="btn red">Logout</button>
+                </li>
                 
                
                 

@@ -1,7 +1,11 @@
+import Card from "../../components/cards/card";
+
+
 function Home (){
     return(
         <>
-        <h1>Home</h1>
+        {/* <Card/>
+        <Card/> */}
         </>
     );
 }
