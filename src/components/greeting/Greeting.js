@@ -16,9 +16,9 @@ const Greeting = () => {
 
     return(
         <>
-        
-        {dtoast(greet)}
         <ToastContainer/>
+        {dtoast(greet)}
+        
         </>
     )
 

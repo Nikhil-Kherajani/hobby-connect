@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { auth } from '../../firebase'
-import { ToastContainer , toast } from 'react-toastify';
+import { toast , ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {useNavigate} from 'react-router-dom'
 
@@ -27,29 +27,33 @@ export default function Signup() {
             
             const result = await auth.createUserWithEmailAndPassword(email, password)
             // window.M.toast({html: `Welcome ${result.user.email}` , classes: "green"})
-            {stoast(result)}
-            <ToastContainer/>
+            stoast(result)
+            
+            
             navigate('/')
 
         }
         catch(err){
             // window.M.toast({html: err.message , classes: "green"})
-            {etoast(err)}
-            <ToastContainer/>
+            etoast(err)
+            
 
         }
         
     }
   return (
+    <>
+    <ToastContainer/> 
     <div className="center container" style={{maxwidth:"500px"}}>
         <h3>Please Signup!!</h3>
         <form onSubmit={(e) => handleSubmit(e)}>
             <div className="input-field">
-                <input type ="email" placeholder="email"  onChange={(e)=> setemail(e.target.value)}/>
-                <input type ="password" placeholder="password"  onChange={(e)=> setpassword(e.target.value)}/> 
+                <input type ="email" placeholder="email" value={email}  onChange={(e)=> setemail(e.target.value)}/>
+                <input type ="password" placeholder="password" value={password} onChange={(e)=> setpassword(e.target.value)}/> 
             </div>
             <button type="submit" className="btn blue">Signup</button>
+            <ToastContainer/>
         </form>
-    </div>
+    </div></>
   )
 }

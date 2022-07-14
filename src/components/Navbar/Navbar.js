@@ -1,8 +1,12 @@
 import './Navbar.css'
 import { Link } from "react-router-dom";
+import { auth } from '../../firebase';
+import {useNavigate} from 'react-router-dom' 
 
 
-function Navbar(){
+function Navbar({user}){
+
+    const navigate = useNavigate();
 
     return (
         <>
@@ -15,7 +19,10 @@ function Navbar(){
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
+                {
+                user?
+                    <>
+                        <li className="nav-item">
                 
                 <Link className="nav-link active" to="/">Home</Link>
                 </li>
@@ -26,16 +33,31 @@ function Navbar(){
                 <li className="nav-item">
                 <Link className="nav-link active" to="/User">User</Link>
                 </li>
-                <li className="nav-item">
+                <li>
+                    <button className="btn red" onClick={() => {
+                        auth.signOut()
+                        navigate('/Login')
+                    }}>Logout</button>
+                </li>
+
+                    </>
+                :
+                <>
+                                     <li className="nav-item">
                 <Link className="nav-link active" to="/Login">Login</Link>
                 </li>
                 <li className="nav-item">
                 <Link className="nav-link active" to="/Signup">Signup</Link>
                 </li>
+                </>
 
-                <li>
-                    <button className="btn red">Logout</button>
-                </li>
+
+
+
+                }
+               
+
+                
                 
                
                 

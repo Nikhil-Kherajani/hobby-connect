@@ -1,4 +1,5 @@
 import Card from "../../components/cards/card";
+import Joke from "../../components/joke/Joke";
 
 
 function Home (){
@@ -6,6 +7,7 @@ function Home (){
         <>
         {/* <Card/>
         <Card/> */}
+        <Joke/>
         </>
     );
 }
