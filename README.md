@@ -10,9 +10,9 @@ Backend: I have used Firebase as Backend.
 
 🔨Packages used:-
 
-➼ Firebase
-➼ React-Router-Dom
-➼ Bootstrap
-➼ Materialized
-➼ React-Toastify
+➼ Firebase <br>
+➼ React-Router-Dom <br>
+➼ Bootstrap <br>
+➼ Materialized <br>
+➼ React-Toastify <br>
 ➼ Google Location
