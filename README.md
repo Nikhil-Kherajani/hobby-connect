@@ -1,10 +1,18 @@
-# hobby-connect
-it's an social media network of people with different interests and hobbies, this web app will suggest similar kinda peoples to users.
+# Hobby-connect
 
-packages used:-
+This social network app offers users the opportunity to connect with people around the world based on their interests and hobbies. 
 
-1. Firebase
-2. React-Router-Dom
-3. Bootstrap
-4. Materialized
-5. React-Toastify
+Framework: I have used React Native for Developing the Android and IOS App.
+
+Library: I have used React.js for developing the web app or website.
+
+Backend: I have used Firebase as Backend.
+
+🔨Packages used:-
+
+➼ Firebase
+➼ React-Router-Dom
+➼ Bootstrap
+➼ Materialized
+➼ React-Toastify
+➼ Google Location
