@@ -1,3 +1,5 @@
+**Please note :** *That this is not the original repository for Hobby Connect. The real repository is private. The repository contains only details about the project.*
+
 # Hobby-connect
 
 This social network app offers users the opportunity to connect with people around the world based on their interests and hobbies. 
