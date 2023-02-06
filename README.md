@@ -1,4 +1,4 @@
-**Please note :** *That this is not the original repository for Hobby Connect. The real repository is private. The repository contains only details about the project.*
+**Please note :** *That this is not the original repository for Hobby Connect. The real repository is private. This repository contains only details about the project.*
 
 # Hobby-connect
 
